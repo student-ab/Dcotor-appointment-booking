@@ -1,7 +1,7 @@
-import React, { useContext, useState } from 'react'
-import { assets } from '../../assets/assets'
-import { toast } from 'react-toastify'
 import axios from 'axios'
+import React, { useContext, useState } from 'react'
+import { toast } from 'react-toastify'
+import { assets } from '../../assets/assets'
 import { AdminContext } from '../../context/AdminContext'
 import { AppContext } from '../../context/AppContext'
 
@@ -163,7 +163,7 @@ const AddDoctor = () => {
                     <textarea onChange={e => setAbout(e.target.value)} value={about} className='w-full px-4 pt-2 border rounded' rows={5} placeholder='write about doctor'></textarea>
                 </div>
 
-                <button type='submit' className='bg-primary px-10 py-3 mt-4 text-white rounded-full'>Add doctor</button>
+                <button type='submit' className='bg-lime-300 px-10 py-3 mt-4 text-black rounded-full'>Add doctor</button>
 
             </div>
 

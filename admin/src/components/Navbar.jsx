@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
-import { assets } from '../assets/assets'
-import { DoctorContext } from '../context/DoctorContext'
-import { AdminContext } from '../context/AdminContext'
 import { useNavigate } from 'react-router-dom'
+import { assets } from '../assets/assets'
+import { AdminContext } from '../context/AdminContext'
+import { DoctorContext } from '../context/DoctorContext'
 
 const Navbar = () => {
 
@@ -25,7 +25,7 @@ const Navbar = () => {
         <img onClick={() => navigate('/')} className='w-36 sm:w-40 cursor-pointer' src={assets.admin_logo} alt="" />
         <p className='border px-2.5 py-0.5 rounded-full border-gray-500 text-gray-600'>{aToken ? 'Admin' : 'Doctor'}</p>
       </div>
-      <button onClick={() => logout()} className='bg-primary text-white text-sm px-10 py-2 rounded-full'>Logout</button>
+      <button onClick={() => logout()} className='bg-lime-300 text-black text-sm px-10 py-2 rounded-full'>Logout</button>
     </div>
   )
 }

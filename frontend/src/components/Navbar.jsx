@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
-import { assets } from '../assets/assets'
 import { NavLink, useNavigate } from 'react-router-dom'
+import { assets } from '../assets/assets'
 import { AppContext } from '../context/AppContext'
 
 const Navbar = () => {
@@ -52,7 +52,7 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-            : <button onClick={() => navigate('/login')} className='bg-primary text-white px-8 py-3 rounded-full font-light hidden md:block'>Create account</button>
+            : <button onClick={() => navigate('/login')} className='bg-lime-300 text-black px-8 py-3 rounded-full font-light hidden md:block'>Create account</button>
         }
         <img onClick={() => setShowMenu(true)} className='w-6 md:hidden' src={assets.menu_icon} alt="" />
 

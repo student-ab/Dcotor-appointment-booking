@@ -1,12 +1,12 @@
-import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
-import validator from "validator";
-import userModel from "../models/userModel.js";
-import doctorModel from "../models/doctorModel.js";
-import appointmentModel from "../models/appointmentModel.js";
-import { v2 as cloudinary } from 'cloudinary'
-import stripe from "stripe";
+import { v2 as cloudinary } from 'cloudinary';
+import jwt from "jsonwebtoken";
 import razorpay from 'razorpay';
+import stripe from "stripe";
+import validator from "validator";
+import appointmentModel from "../models/appointmentModel.js";
+import doctorModel from "../models/doctorModel.js";
+import userModel from "../models/userModel.js";
 
 // Gateway Initialize
 const stripeInstance = new stripe(process.env.STRIPE_SECRET_KEY)
@@ -344,15 +344,5 @@ const verifyStripe = async (req, res) => {
 }
 
 export {
-    loginUser,
-    registerUser,
-    getProfile,
-    updateProfile,
-    bookAppointment,
-    listAppointment,
-    cancelAppointment,
-    paymentRazorpay,
-    verifyRazorpay,
-    paymentStripe,
-    verifyStripe
-}
+    bookAppointment, cancelAppointment, getProfile, listAppointment, loginUser, paymentRazorpay, paymentStripe, registerUser, updateProfile, verifyRazorpay, verifyStripe
+};
