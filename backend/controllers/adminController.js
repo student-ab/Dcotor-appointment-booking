@@ -1,9 +1,9 @@
+import bcrypt from "bcrypt";
+import { v2 as cloudinary } from "cloudinary";
 import jwt from "jsonwebtoken";
+import validator from "validator";
 import appointmentModel from "../models/appointmentModel.js";
 import doctorModel from "../models/doctorModel.js";
-import bcrypt from "bcrypt";
-import validator from "validator";
-import { v2 as cloudinary } from "cloudinary";
 import userModel from "../models/userModel.js";
 
 // API for admin login
@@ -149,10 +149,5 @@ const adminDashboard = async (req, res) => {
 }
 
 export {
-    loginAdmin,
-    appointmentsAdmin,
-    appointmentCancel,
-    addDoctor,
-    allDoctors,
-    adminDashboard
-}
+    addDoctor, adminDashboard, allDoctors, appointmentCancel, appointmentsAdmin, loginAdmin
+};

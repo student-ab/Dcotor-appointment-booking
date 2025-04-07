@@ -1,7 +1,6 @@
 import bcrypt from "bcrypt";
 import { v2 as cloudinary } from 'cloudinary';
 import jwt from "jsonwebtoken";
-import razorpay from 'razorpay';
 import stripe from "stripe";
 import validator from "validator";
 import appointmentModel from "../models/appointmentModel.js";
@@ -10,10 +9,10 @@ import userModel from "../models/userModel.js";
 
 // Gateway Initialize
 const stripeInstance = new stripe(process.env.STRIPE_SECRET_KEY)
-const razorpayInstance = new razorpay({
-    key_id: process.env.RAZORPAY_KEY_ID,
-    key_secret: process.env.RAZORPAY_KEY_SECRET,
-})
+// const razorpayInstance = new razorpay({
+//     key_id: process.env.RAZORPAY_KEY_ID,
+//     key_secret: process.env.RAZORPAY_KEY_SECRET,
+// })
 
 // API to register user
 const registerUser = async (req, res) => {

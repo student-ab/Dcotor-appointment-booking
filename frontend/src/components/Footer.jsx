@@ -12,12 +12,12 @@ const Footer = () => {
         </div>
 
         <div>
-          <p className='text-xl font-medium mb-5'>COMPANY</p>
+          <p className='text-xl font-medium mb-5'>Developed by</p>
           <ul className='flex flex-col gap-2 text-gray-600'>
-            <li>Home</li>
-            <li>About us</li>
-            <li>Delivery</li>
-            <li>Privacy policy</li>
+            <li>Harsh pratap</li>
+            <li>Fuzail Mehtab</li>
+            <li>Abhishek nigam</li>
+            <li>Kunal pratap singh</li>
           </ul>
         </div>
 

@@ -1,8 +1,8 @@
-import React, { useContext, useEffect, useState } from 'react'
-import { AppContext } from '../context/AppContext'
 import axios from 'axios'
+import React, { useContext, useState } from 'react'
 import { toast } from 'react-toastify'
 import { assets } from '../assets/assets'
+import { AppContext } from '../context/AppContext'
 
 const MyProfile = () => {
 
@@ -116,8 +116,8 @@ const MyProfile = () => {
             <div className='mt-10'>
 
                 {isEdit
-                    ? <button onClick={updateUserProfileData} className='border border-primary px-8 py-2 rounded-full hover:bg-primary hover:text-white transition-all'>Save information</button>
-                    : <button onClick={() => setIsEdit(true)} className='border border-primary px-8 py-2 rounded-full hover:bg-primary hover:text-white transition-all'>Edit</button>
+                    ? <button onClick={updateUserProfileData} className='border border-lime-600 px-8 py-2 rounded-full  hover:bg-lime-300 hover:text-black  transition-all'>Save information</button>
+                    : <button onClick={() => setIsEdit(true)} className='border border-lime-600 px-8 py-2 rounded-full hover:bg-lime-300 hover:text-black transition-all'>Edit</button>
                 }
 
             </div>
